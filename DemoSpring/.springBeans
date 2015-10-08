@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/hoy/demo/spring/base/xml/Beans.xml</config>
+		<config>src/hoy/demo/spring/aop/bean.xml</config>
 	</configs>
 	<configSets>
 	</configSets>
