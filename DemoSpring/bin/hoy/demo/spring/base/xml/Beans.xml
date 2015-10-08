@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+<context:annotation-config/>
+
+   <bean id="helloWorld" class="hoy.demo.spring.base.xml.HelloWorld"
+      >
+       <!-- init-method="init" destroy-method="destroy" -->
+       <property name="message" value="Hello World!"/>
+   </bean>
+   
+	<bean id="student" class="hoy.demo.spring.base.xml.Student">
+      <property name="name"  value="Zara" />
+      <property name="age"  value="11"/>
+   </bean>
+   
+  <!--  <bean class="hoy.demo.spring.base.xml.InitHelloWorld" /> -->
+   
+   <bean id="textEditor" class="hoy.demo.spring.base.xml.TextEditor">
+   </bean>
+
+   <!-- Definition for spellChecker bean -->
+   <bean id="spellChecker" class="hoy.demo.spring.base.xml.SpellChecker">
+   </bean>
+</beans>
