@@ -24,7 +24,7 @@ public class Logging {
     */
    @Before("selectAll()")
    public void beforeAdvice(){
-      System.out.println("Going to setup student profile.");
+      System.out.println("  Going to setup student profile.");
    }
 
    /** 
