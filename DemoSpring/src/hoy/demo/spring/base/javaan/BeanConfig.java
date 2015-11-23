@@ -10,6 +10,11 @@ public class BeanConfig {
 	 public HelloWorld helloWorld(){
 	      return new HelloWorld();
 	   }
+	   
+	@Bean
+	 public HelloMars helloMars(){
+	      return new HelloMars();
+	   }
 /*	
 	@Bean
 	 public InitHelloWorld InitHelloWorld(){
